@@ -1,6 +1,8 @@
 from time import sleep
+import os
+from os.path import join, dirname
 from selenium import webdriver
-
+from dotenv import load_dotenv
 
 # FOR RUNNING HEADLESS
 # from selenium.webdriver import FirefoxOptions
@@ -9,8 +11,11 @@ from selenium import webdriver
 # browser = webdriver.Firefox(firefox_options=opts)
 
 
-# def download_random_cat_video:
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 
+ig_username = os.environ.get("USERNAME")
+ig_password = os.environ.get("PASSWORD")
 
 class LoginPage:
     def __init__(self, browser):
@@ -62,7 +67,7 @@ browser = webdriver.Firefox()
 browser.implicitly_wait(5)
 
 login = LoginPage(browser)
-login.login('', '')
+login.login(ig_username, ig_password)
 channel = ChannelPage(browser)
 channel.upload_video()
 channel.add_video_and_details()
