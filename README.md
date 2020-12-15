@@ -35,6 +35,7 @@ Instagram removed the "Add Post" button from their website **but** they didn't r
 1. Install Selenium through [here](https://selenium-python.readthedocs.io/installation.html)
 2. Install Geckodriver through Homebrew `brew install geckodriver`
 3. Install project dependencies `pip install -r requirements.txt`
+4. Create an .env at the root of the project and copy the contents from .env-template.   
 4. Setup virtualenv 
    ```
    python -m venv ./venv
