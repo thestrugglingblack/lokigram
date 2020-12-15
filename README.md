@@ -1,30 +1,30 @@
 ```bazaar
-                               .__....._             _.....__,
-                                        .": o :':         ;': o :".
-                                        `. `-' .'.       .'. `-' .'
-                                          `---'             `---'
-                            
-                                _...----...      ...   ...      ...----..._
-                             .-'__..-""'----    `.  `"`  .'    ----'""-..__`-.
-                            '.-'   _.--"""'       `-._.-'       '"""--._   `-.`
-                            '  .-"'                  :                  `"-.  `
-                              '   `.              _.'"'._              .'   `
-                                    `.       ,.-'"       "'-.,       .'
-                                      `.                           .'
-                                        `-._                   _.-'
-                                            `"'--...___...--'"`
-                                    
-                    ██       ██████  ██   ██ ██  ██████  ██████   █████  ███    ███ 
-                    ██      ██    ██ ██  ██  ██ ██       ██   ██ ██   ██ ████  ████ 
-                    ██      ██    ██ █████   ██ ██   ███ ██████  ███████ ██ ████ ██ 
-                    ██      ██    ██ ██  ██  ██ ██    ██ ██   ██ ██   ██ ██  ██  ██ 
-                    ███████  ██████  ██   ██ ██  ██████  ██   ██ ██   ██ ██      ██                 
+                            .__....._             _.....__,
+                                     .": o :':         ;': o :".
+                                     `. `-' .'.       .'. `-' .'
+                                       `---'             `---'
+                         
+                             _...----...      ...   ...      ...----..._
+                          .-'__..-""'----    `.  `"`  .'    ----'""-..__`-.
+                         '.-'   _.--"""'       `-._.-'       '"""--._   `-.`
+                         '  .-"'                  :                  `"-.  `
+                           '   `.              _.'"'._              .'   `
+                                 `.       ,.-'"       "'-.,       .'
+                                   `.                           .'
+                                     `-._                   _.-'
+                                         `"'--...___...--'"`
+                                 
+                 ██       ██████  ██   ██ ██  ██████  ██████   █████  ███    ███ 
+                 ██      ██    ██ ██  ██  ██ ██       ██   ██ ██   ██ ████  ████ 
+                 ██      ██    ██ █████   ██ ██   ███ ██████  ███████ ██ ████ ██ 
+                 ██      ██    ██ ██  ██  ██ ██    ██ ██   ██ ██   ██ ██  ██  ██ 
+                 ███████  ██████  ██   ██ ██  ██████  ██   ██ ██   ██ ██      ██                 
 ```
 # Overview
 This project came from the love of my beautiful cat Loki! The world needs to know about him and what better way to do this than to post his cute cat pictures and videos on Instagram. I didn't want to manually upload these media files, so I thought what a better way to do this than to create a script that would do all of the work for me. Unfortunately Instagram, doesn't allow for computers to upload pictures to personal accounts (Booo Instagram! :ghost:) So I had to resort to creative ways.
 
 Instagram removed the "Add Post" button from their website **but** they didn't remove their "Upload Video" button for Instagram videos. The script I created allows for me to use Selenium and Geckodriver to upload videos to Instagram. To tackle uploading pictures on Instagram I resorted to using [Apple Scripts](https://en.wikipedia.org/wiki/AppleScript). I have a blog post on creating an Apple Script through an iOS phone [here]().
-![]()
+![](https://github.com/thestrugglingblack/lokigram/blob/main/assets/lokitheoneandonly.jpg)
 
 # Requirements
 * Python 3.6
