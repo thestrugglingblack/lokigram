@@ -1,8 +1,9 @@
+import os, uuid
 from time import sleep
-import os
 from os.path import join, dirname
 from selenium import webdriver
 from dotenv import load_dotenv
+from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
 
 # FOR RUNNING HEADLESS
 # from selenium.webdriver import FirefoxOptions
@@ -17,6 +18,8 @@ load_dotenv(dotenv_path)
 ig_username = os.environ.get("USERNAME")
 ig_password = os.environ.get("PASSWORD")
 ig_channel = os.environ.get("CHANNEL_URL")
+azure_connection_string = os.environ.get("AZURE_STORAGE_CONNECTION_STRING")
+
 
 class LoginPage:
     def __init__(self, browser):
@@ -63,7 +66,12 @@ class ChannelPage:
         description_input.send_keys("I am doing cat things!")
 
     def download_random_cat_video(self):
-        print('Downloading random cat video')
+        try:
+            print('ABS' + __version__)
+        except Exception as ex:
+            print('Exception:')
+            print(ex)
+
 
     def drag_and_drop_cat_video(self):
         print('Dragging and dropping the cat video')
@@ -78,8 +86,8 @@ login.login(ig_username, ig_password)
 channel = ChannelPage(browser)
 channel.upload_video()
 channel.add_video_and_details()
-channel.download_random_cat_video()
-channel.drag_and_drop_cat_video()
+# channel.download_random_cat_video()
+# channel.drag_and_drop_cat_video()
 # browser.close()
 
 
